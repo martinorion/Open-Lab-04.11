@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Globalization;
 
 namespace Open_Lab_04._11
 {
@@ -6,7 +7,9 @@ namespace Open_Lab_04._11
     {
         public string AlphabetSoup(string str)
         {
-            throw new NotImplementedException();
+            char[] characters = str.ToCharArray();
+            Array.Sort(characters);
+            return new string(characters);
         }
     }
 }
